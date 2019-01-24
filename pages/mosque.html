@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<!--
+Template Name: Brickary
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+-->
+<html>
+<head>
+<title>প্রশ্নত্তর</title>
+<meta charset="utf-8">
+<link rel="shortcut icon" type="images/x-icon" href="../images/demo/favicon2.png"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row0">
+  <div id="topbar" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div class="fl_left">
+      <ul>
+        <li><i class="fa fa-phone"></i>+00 (123) 456 7890</li>
+        <li><i class="fa fa-envelope-o"></i>info@cis.com</li>
+      </ul>
+    </div>
+
+   
+    <div class="fl_right">
+      <ul>
+        <li><a href="index.html"><i class="fa fa-lg fa-home"></i></a></li>
+        <li><a href="#">লগ ইন</a></li>
+        <li><a href="#">রেজিস্টেশন</a></li>
+      </ul>
+    </div>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- Top Background Image Wrapper -->
+<div class="bgded overlay" style="background-image:url('../images/demo/backgrounds/01.png');"> 
+  <!-- ################################################################################################ -->
+  <div class="wrapper row1">
+    <header id="header" class="hoc clear"> 
+      <!-- ################################################################################################ -->
+      <div id="logo" class="fl_left">
+        
+        <h1><a href="../index.html"><img src="../images/logo.png"></a></h1>
+      </div>
+      <nav id="mainav" class="fl_right">
+        <ul class="clear">
+          <li class=""><a href="../index.html">মূল পাতা</a></li>
+          <li class=""><a class="drop" href="bishoy.html">বিষয় </a>
+            <ul>
+              <li><a href="#">নামাজ</a></li>
+              <li><a href="#">রোজা</a></li>
+              <li><a href="#">হজ্ব</a></li>
+              <li><a href="#">যাকাত</a></li>
+              <li><a href="#">অন্যান্য</a></li>
+            </ul>
+          </li>
+          <li><a class="drop" href="#">ডাউনলোড </a>
+            <ul>
+              <li><a href="lecture.html">লেকচার</a></li>
+              <li><a href="islamicbook.html">ইসলামিক বই</a></li>
+             
+             
+            </ul>
+          <li class="active"><a href="qanda.html">প্রশ্নোত্তর</a></li>
+          </li>
+          <li><a class="drop" href="#">কোরআন হাদিস</a>
+            <ul>
+              <li><a href="#">কোরআন বাংলা অর্থসহ</a></li>
+              <li><a href="listenquran.html">আল কোরআন শুনুন</a>
+              </li>
+              <li><a href="#">বিষয়ভিত্তিক হাদিস</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+</div>
+<!-- End Top Background Image Wrapper -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  
+
+  <main class="hoc container clear"> 
+    
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <div class="content three_quarter first"> 
+    <!-- ################################################################################################ -->
+    <h1>পার্শবর্তী মসজিদ</h1>
+  <div id="map"></div>
+  <script>
+    
+    function initMap(){
+      // Map options
+      var options = {
+        zoom:14,
+        center:{lat:23.751048,lng:90.387069}
+      }
+
+      // New map
+      var map = new google.maps.Map(document.getElementById('map'), options);
+      /*
+      // Listen for click on map
+      google.maps.event.addListener(map, 'click', function(event){
+        // Add marker
+        addMarker({coords:event.latLng});
+      });
+      */
+      /*
+      // Add marker
+      var marker = new google.maps.Marker({
+        position:{lat:42.4668,lng:-70.9495},
+        map:map,
+        icon:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
+      });
+
+      var infoWindow = new google.maps.InfoWindow({
+        content:'<h1>Lynn MA</h1>'
+      });
+
+      marker.addListener('click', function(){
+        infoWindow.open(map, marker);
+      });
+      */
+
+      // Array of markers
+      var markers = [
+        {
+          coords:{lat:23.750471,lng:90.386193},
+          iconImage:'mmost.png',
+          content:'<h1>গ্রীন রোড জামে মসজিদ</h1><a href="https://www.google.com/maps/place/Green+Road+Jame+Masjid/@23.7503025,90.3864111,18.58z/data=!4m5!3m4!1s0x3755b8bad1058c39:0x60e2c6c430730c78!8m2!3d23.7503896!4d90.3861898">Get Direction</a><p>Parking Nearby: &nbsp<span style="color: red;">Not Available<span></p><img src="mpc.jpg">'
+        },
+        {
+          coords:{lat:23.753072,lng:90.393107},
+          iconImage:'mmost.png',
+          content:'<h1>সরকারি বিজ্ঞান কলেজ জামে মসজিদ</h1><a href="https://www.google.com/maps/place/Government+Science+College+Mosque/@23.7541379,90.39215,17z/data=!4m8!1m2!2m1!1smosque!3m4!1s0x0:0x889b9c712c3d6a2e!8m2!3d23.757282!4d90.3931696">Get Direction</a><p>Parking Nearby: &nbsp<span style="color: green;">Available<span></p><img src="mpc.jpg">'
+        },
+        {
+          coords:{lat:23.757212,lng:90.379858},
+          iconImage:'mmost.png',
+          content:'<h1>শুক্রাবাদ জামে মসজিদ</h1><a href="https://www.google.com/maps/place/Government+Science+College+Mosque/@23.7541379,90.39215,17z/data=!4m8!1m2!2m1!1smosque!3m4!1s0x0:0x889b9c712c3d6a2e!8m2!3d23.757282!4d90.3931696">Get Direction</a><p>Parking Nearby: &nbsp<span style="color: green;">Available<span></p><img src="mpc.jpg">'
+        },
+        {
+          coords:{lat:23.748930,lng:90.403674},
+          iconImage:'mmost.png',
+          content:'<h1>মগবাজার চৌরাস্তা জামে মসজিদ</h1><a href="https://www.google.com/maps/place/Government+Science+College+Mosque/@23.7541379,90.39215,17z/data=!4m8!1m2!2m1!1smosque!3m4!1s0x0:0x889b9c712c3d6a2e!8m2!3d23.757282!4d90.3931696">Get Direction</a><p>Parking Nearby: &nbsp<span style="color: red;">Not Available<span></p><img src="mpc.jpg">'
+        },
+        {
+          coords:{lat:23.750413,lng:90.374703},
+          iconImage:'mmost.png',
+          content:'<h1>মসজিদ-উত-তাকওয়া</h1><a href="https://www.google.com/maps/place/Government+Science+College+Mosque/@23.7541379,90.39215,17z/data=!4m8!1m2!2m1!1smosque!3m4!1s0x0:0x889b9c712c3d6a2e!8m2!3d23.757282!4d90.3931696">Get Direction</a><p>Parking Nearby: &nbsp<span style="color: green;">Available<span></p><img src="mpc.jpg">'
+        },
+        {
+          coords:{lat:23.744364,lng:90.378849},
+          iconImage:'mmost.png',
+          content:'<h1>বাইতুল আমান মসজিদ</h1><a href="https://www.google.com/maps/place/Government+Science+College+Mosque/@23.7541379,90.39215,17z/data=!4m8!1m2!2m1!1smosque!3m4!1s0x0:0x889b9c712c3d6a2e!8m2!3d23.757282!4d90.3931696">Get Direction</a><p>Parking Nearby: &nbsp<span style="color: red;">Not Available<span></p><img src="mpc.jpg">'
+        },
+  
+        {
+          coords:{lat:42.7762,lng:-71.0773}
+        }
+      ];
+
+      // Loop through markers
+      for(var i = 0;i < markers.length;i++){
+        // Add marker
+        addMarker(markers[i]);
+      }
+
+      // Add Marker Function
+      function addMarker(props){
+        var marker = new google.maps.Marker({
+          position:props.coords,
+          map:map,
+          //icon:props.iconImage
+        });
+
+        // Check for customicon
+        if(props.iconImage){
+          // Set icon image
+          marker.setIcon(props.iconImage);
+        }
+
+        // Check content
+        if(props.content){
+          var infoWindow = new google.maps.InfoWindow({
+            content:props.content
+          });
+
+          marker.addListener('click', function(){
+            infoWindow.open(map, marker);
+          });
+        }
+      }
+    }
+  </script>
+  
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-DDY_4jSjZTbexwIF5RRwUncfzxb2GfU&callback=initMap">
+    </script>
+
+
+
+<!-- ################################################################################################ -->
+      
+ 
+
+
+    <!-- ################################################################################################ -->
+    
+    <!-- ################################################################################################ -->
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row4 bgded overlay" style="background-image:url('../images/demo/backgrounds/03.png');">
+  <footer id="footer" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <h3 class="heading">ইসলামিক সল্যুশন</h3>
+    <nav>
+      <ul class="nospace inline pushright uppercase">
+        <li><a href="index.html"><i class="fa fa-lg fa-home"></i></a></li>
+        <li><a href="#">আমাদের সম্পর্কে</a></li>
+        <li><a href="#"> দায়মুক্তির ছাড়পত্র</a></li>
+        <li><a href="#">সাইটম্যাপ</a></li>
+        <li><a href="#"> যোগাযোগ করুন</a></li>
+      </ul>
+    </nav>
+    <ul class="faico clear">
+      <li><a class="faicon-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+      <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+      <li><a class="faicon-dribble" href="#"><i class="fa fa-dribbble"></i></a></li>
+      <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+      <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+      <li><a class="faicon-vk" href="#"><i class="fa fa-vk"></i></a></li>
+    </ul>
+    <!-- ################################################################################################ -->
+  </footer>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <p class="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="#">www.cis.com</a></p>
+   
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="../layout/scripts/jquery.min.js"></script>
+<script src="../layout/scripts/jquery.backtotop.js"></script>
+<script src="../layout/scripts/jquery.mobilemenu.js"></script>
+</body>
+</html>
